@@ -25,7 +25,7 @@ For `vosk`:
 * install the python `json` library and import it as dependency
 *  extract transcribed text from within json:
     ```
-   text = recognizer.recognize_whisper(audio_data)
+   text = recognizer.recognize_vosk(audio_data)
    text = json.loads(transcription)["text"]
    ```
 
