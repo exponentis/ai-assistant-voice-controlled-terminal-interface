@@ -12,6 +12,7 @@ def process(input):
 
 start_terminal_with_voice_input(process)
 ```
+Press `enter` at the user prompt to activate the microphone and use it to capture audio input instead of text
 
 ## Dependencies
 
