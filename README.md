@@ -1,6 +1,6 @@
 # ai-chat-terminal-with-voice
 
-Python terminal that enables a User/Assistant conversation driven by a content generation function and takes both text and voice as user input
+Python terminal that enables a User/Assistant conversation driven by a content generation function, taking both text and voice as user input
 
 ## Usage
 
