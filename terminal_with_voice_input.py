@@ -1,5 +1,5 @@
 import speech_recognition as sr
-import json
+#import json
 
 def start_terminal_with_voice_input(func):
     # Initialize the recognizer
@@ -16,8 +16,12 @@ def start_terminal_with_voice_input(func):
                 print("Recognizing......")
                 try:
                     # Recognize the speech
+                    # whisper
                     text = recognizer.recognize_whisper(audio_data)
+                    # vosk
+                    #text = recognizer.recognize_vosk(audio_data)
                     # text = json.loads(transcription)["text"] #for vosk
+
                     print("Recognized speech: ", text)
                     if(text.lower() == "exit"):
                         break
