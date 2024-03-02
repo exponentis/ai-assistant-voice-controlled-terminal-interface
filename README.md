@@ -16,7 +16,7 @@ Press `enter` at the user prompt to activate the microphone and use it to captur
 
 ## Dependencies
 
-The `speech_recognition` python library
+The main dependency is the `speech_recognition` python library
 
 For `whisper`, no other dependencies
 
@@ -24,7 +24,7 @@ For `vosk`:
 
 * download a model from [https://alphacephei.com/vosk/models](https://alphacephei.com/vosk/models), unzip, rename folder to *model* and place in the root folder.
 * install the python `json` library and import it as dependency
-*  extract transcribed text from within the json response:
+* extract transcribed text from within the json response:
 
 ```python
 text = recognizer.recognize_vosk(audio_data)
