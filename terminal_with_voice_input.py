@@ -23,7 +23,7 @@ def start_terminal_with_voice_input(func):
                     # text = json.loads(transcription)["text"] #for vosk
 
                     print("Recognized speech: ", text)
-                    if(text.lower() == "exit"):
+                    if(text.lower().strip() == "exit" or text.lower().strip() == "exit."):
                         break
                     user_input = text
                     print("User (via voice): ", end="")
@@ -33,10 +33,10 @@ def start_terminal_with_voice_input(func):
                     print("Speech recognition could not understand the audio.")
                 except sr.RequestError as e:
                     user_input = None
-                    print(f"Could not request results from service; {e}")
-                except:
+                    print(f"Could not request results from service: {e}")
+                except Exception as e:
                     user_input = None
-                    print("Speech recognition failed.")
+                    print(f"Speech recognition failed: {e}")
 
             if(user_input):
                 response = func(user_input)
