@@ -24,7 +24,7 @@ For `vosk`:
 
 * download a model from [https://alphacephei.com/vosk/models](https://alphacephei.com/vosk/models), unzip, rename folder to *model* and place in the root folder.
 * install the python `json` library and import it as dependency
-*  extract transcribed text from within json:
+*  extract transcribed text from within the json response:
 
 ```python
 text = recognizer.recognize_vosk(audio_data)
