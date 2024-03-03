@@ -19,7 +19,7 @@ def start_terminal_with_voice_input(func):
                     # whisper
                     text = recognizer.recognize_whisper(audio_data)
                     # vosk
-                    #text = recognizer.recognize_vosk(audio_data)
+                    #transcription = recognizer.recognize_vosk(audio_data)
                     # text = json.loads(transcription)["text"] #for vosk
 
                     print("Recognized speech: ", text)
